@@ -21,7 +21,8 @@ const teamsReducer = (state = initialState, action) => {
 
 const handleGetTeamsTrigger = (state) => ({
   ...state,
-  loading: true
+  loading: true,
+  error: ''
 })
 
 const handleGetTeamsSuccess = (state, action) => ({
