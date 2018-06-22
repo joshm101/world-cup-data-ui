@@ -1,7 +1,11 @@
 import { fork, all } from 'redux-saga/effects'
 
-const sagas = []
+import teamsSagas from './teamsSagas'
 
-export default function * rootSaga() {
+const sagas = [
+  ...teamsSagas
+]
+
+export default function* rootSaga() {
   yield all(sagas.map(fork))
 }
