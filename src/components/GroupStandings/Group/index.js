@@ -1,5 +1,5 @@
 import React from 'react'
-import { List, Table, Avatar } from 'antd'
+import { Table } from 'antd'
 
 import './index.css'
 
