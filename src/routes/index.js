@@ -5,7 +5,9 @@ import Home from './Home'
 
 const Routes = () => (
   <Router>
-    <Route exact path="/" component={Home} />
+    <Route exact path={process.env.PUBLIC_URL + '/'}
+      component={Home} 
+    />
   </Router>
 )
 
