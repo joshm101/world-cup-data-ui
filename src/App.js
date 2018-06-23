@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import GroupStandings from './components/GroupStandings'
+import Routes from './routes'
 
 class App extends Component {
   render() {
@@ -15,7 +15,7 @@ class App extends Component {
         </h3>
         {API_URL &&
           <div>
-            <GroupStandings />
+            <Routes />
           </div>
         }
         {!API_URL &&
