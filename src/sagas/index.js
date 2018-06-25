@@ -2,10 +2,12 @@ import { fork, all } from 'redux-saga/effects'
 
 import teamsSagas from './teamsSagas'
 import groupStandingsSagas from './groupStandingsSagas'
+import matchesSagas from './matchesSagas'
 
 const sagas = [
   ...teamsSagas,
-  ...groupStandingsSagas
+  ...groupStandingsSagas,
+  ...matchesSagas
 ]
 
 export default function* rootSaga() {
